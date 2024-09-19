@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety App</title>
+    <link rel="stylesheet" href="medical.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Women's Safety App</h1>
+        <form id="safetyForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="bloodType">Blood Type:</label>
+                <input type="text" id="bloodType" name="bloodType" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="medicalReports">Previous Medical Reports:</label>
+                <textarea id="medicalReports" name="medicalReports"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="medication">On Any Medication:</label>
+                <input type="text" id="medication" name="medication">
+            </div>
+            
+            <div class="form-group">
+                <label for="steps">Number of Steps (daily):</label>
+                <input type="number" id="steps" name="steps">
+            </div>
+            
+            <div class="form-group">
+                <label for="periodDay">Period Tracking (Day):</label>
+                <input type="number" id="periodDay" name="periodDay" min="1" max="31" placeholder="1-31" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="periodMonth">Period Tracking (Month):</label>
+                <select id="periodMonth" name="periodMonth" required>
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="output"></div>
+        <div id="nextPeriodDate"></div> <!-- New div for displaying next period date -->
+    </div>
+    <script src="medical.js"></script>
+</body>
+</html>

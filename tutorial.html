@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Previews</title>
+    <style>
+        body {
+            background-color: #f8c9d4; /* Light pink background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .notice {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-rows: repeat(2, auto); /* 2 rows */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video-card {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-card img {
+            width: 100%;
+            max-width: 300px; /* Default max width */
+            height: auto;
+            border-radius: 8px;
+            background-color: transparent; /* Ensure background is transparent */
+        }
+
+        .video-card a {
+            text-decoration: none;
+            color: #000; /* Text color set to black for better visibility */
+        }
+
+        .video-title {
+            font-size: 20px; /* Increased font size for better visibility */
+            color: #000; /* Text color set to black */
+            margin-top: 10px;
+        }
+
+        .large-img {
+            max-width: 350px; /* Larger max width for the third image */
+        }
+
+        .small-img {
+            max-width: 250px; /* Smaller max width for the specific image */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Text box with message -->
+    <div class="notice">
+        Click on the image for YouTube redirection.
+    </div>
+
+    <!-- Video previews container -->
+    <div class="container">
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=T7aNSRoDCmg" target="_blank">
+                <img src="https://i.ytimg.com/vi/T7aNSRoDCmg/maxresdefault.jpg" alt="Personal Safety Tips">
+                <div class="video-title">Personal Safety Tips</div>
+            </a>
+        </div>
+        <div class="video-card">
+            <a href="https://www.youtube.com/shorts/WgHTqdupLd4" target="_blank">
+                <img src="https://www.shutterstock.com/image-vector/man-robber-sprayed-gas-victim-260nw-2447134397.jpg">
+                <div class="video-title">Quick Safety Tips</div>
+            </a>
+        </div>
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=k9Jn0eP-ZVg" target="_blank">
+                <img src="https://colonelroyacademy.com/admin/include/upload/self-defence.jpg">
+                <div class="video-title">Self Defense Basics</div>
+            </a>
+        </div>
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=VTEXi86hxvs" target="_blank">
+                <img src="https://imgeng.jagran.com/images/2024/mar/Womens%20Day%202024%20Gift%20Ideas1709641024144.jpg" alt="How to Stay Safe">
+                <div class="video-title">How to Stay Safe</div>
+            </a>
+        </div>
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=LQ8yk0rvLb4" target="_blank">
+                <img src="https://png.pngtree.com/png-clipart/20221013/ourmid/pngtree-female-woman-self-defense-self-defense-defense-protection-png-image_6153147.png" class="small-img" alt="Self Defense Techniques">
+                <div class="video-title">Self Defense Techniques</div>
+            </a>
+        </div>
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=HMtNKZEul3E" target="_blank">
+                <img src="https://static.vecteezy.com/system/resources/previews/026/994/872/original/self-defense-shop-tiny-people-arming-against-bandits-and-hooligans-electric-shock-pepper-spray-brass-knuckle-knife-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg" alt="Self Defense Tools">
+                <div class="video-title">Self Defense Tools</div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

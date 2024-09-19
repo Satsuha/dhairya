@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhairya - Woman Safety App</title>
+    <link rel="stylesheet" href="user interface.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFC0CB; 
+    background-image: url('x.jpg'); 
+    background-size:  box; /* Changed from 'contain' to 'cover' for a better fit */
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+        .welcome-button {
+            background-color: #000;
+            color: #fff; 
+            border: none;
+            padding: 20px 40px;
+            margin-bottom: 50px;
+            font-size: 2.5em;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 5px;
+            cursor: default;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-button {
+            background-color: #000; 
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-align: center;
+            width: 250px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-button:hover {
+            background-color: #333;
+        }
+
+        .menu-button i {
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .sos-button {
+            background-color: #ff0000; /* Red background for SOS */
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-align: center;
+            width: 250px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sos-button i {
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .sos-button:hover {
+            background-color: #cc0000; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-button">Welcome to Dhairya</div>
+
+    <div class="button-container">
+        <a href="edit.html" class="menu-button">
+            <i class="fas fa-pencil-alt"></i> View Your Off Screen Gestures
+        </a>
+        
+        <a href="g.html" class="menu-button">
+            <i class="fas fa-shield-alt"></i> Safety Score
+        </a>
+        
+        <a href="chat.html" class="menu-button">
+            <i class="fas fa-comments"></i> Chat with Guardian
+        </a>
+        
+        <a href="comm.html" class="menu-button">
+            <i class="fas fa-users"></i> Community Platform
+        </a>
+        
+        
+        <a href="medical.html" class="menu-button">
+            <i class="fas fa-medkit"></i> Medical History
+        </a>
+        
+        <a href="tutorial.html" class="menu-button">
+            <i class="fas fa-pencil-alt"></i> Self Defence Tutorials
+        </a>
+    </div>
+    
+
+</body>
+</html>
